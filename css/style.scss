@@ -61,9 +61,9 @@ section {
 .content{
 
 .more-content{
-    position: relative;
-    left: 30rem;
-    bottom: 20rem;
+    position: absolute;
+    top: 62rem;
+    left: 40rem;
     z-index: 1;
     background-color: white;
     width: 50%;
@@ -81,9 +81,105 @@ p {
 }
 }
 }
+.intro {
+    margin-top: 10rem;
 }
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem 5rem;
+p {
+    position: relative;
+    top: 300px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.card1{
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+    background-size: cover;
+    height: 50vh;
+    margin: 1rem;
+}
+.card2{
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+    background-size: cover;
+    height: 50vh;
+    margin: 1rem;
+}
+.card3{
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+    background-size: cover;
+    height: 50vh;
+    margin: 1rem;
+}
+.card4{
+    background-image: url(../images/desktop/image-grid.jpg);
+    background-size: cover;
+    height: 50vh;
+    margin: 1rem;
+}
+.card5{
+    background-image: url(../images/desktop/image-from-above.jpg);
+    background-size: cover;
+    height: 50vh;
+    margin: 1rem;
+}
+.card6{
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+    background-size: cover;
+    height: 50vh;
+    margin: 1rem;
+}
+.card7{
+    background-image: url(../images/desktop/image-curiosity.jpg);
+    background-size: cover;
+    height: 50vh;
+    margin: 1rem;
+}
+.card8{
+    background-image: url(../images/desktop/image-fisheye.jpg);
+    background-size: cover;
+    height: 50vh;
+    margin: 1rem;
+}
+}
+}
+
+footer {
+    background-color: black;
+    padding: 3rem 10rem;
+.logo-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ .icons {
+    margin-right: 2rem;
+img {
+    padding: .5rem;
+}
+ }   
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    color: white;
+a {
+    text-decoration: none;
+    color: white;
+    margin: .5rem;
+}
+}
+}
+
+
 @media only screen and (max-width: 768px) {
 header {
+    background-image: url(../images/mobile/image-hero.jpg);
     .box {
         width: 90%;
         margin: 10rem 1rem;
@@ -108,8 +204,7 @@ header {
         background-color: black;
         position: absolute;
         top: 0;
-        left: 0;
-         
+        left: 0;   
     ul {
         flex-direction: column;
        
@@ -122,7 +217,9 @@ header {
 }
 section {
 .content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    img {
+        max-width: 99%;
+    }
 }
+
 }

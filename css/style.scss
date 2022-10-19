@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    background-image: url(../images/desktop/image-hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+.box {
+    color: white;
+    font-family: 'Alata', sans-serif;
+    font-size: 3rem;
+    border: solid white 2px;
+    height: 35vh;
+    width: 30%;
+    margin: 10rem 15rem;
+    padding: 1rem 2rem;
+    letter-spacing: 3px;
+}
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    font-family: 'Alata', sans-serif;
+.navbar-links {
+ul {
+    display: flex;
+    list-style: none;
+}
+li a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+}
+}
+.menu {
+    position: absolute;
+    flex-direction: column;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+.bars {
+    background-color: white;
+    padding: 3px 13px;
+    margin: 2px;
+}
+}
+}
+
+section {
+    margin: 5rem 5rem;
+    font-family: 'Josefin Sans', sans-serif;
+.content{
+
+.more-content{
+    position: relative;
+    left: 30rem;
+    bottom: 20rem;
+    z-index: 1;
+    background-color: white;
+    width: 50%;
+    height: 45vh;
+    padding: 1rem 2rem;
+    
+span {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 1rem;
+}
+}
+}
+}
+@media only screen and (max-width: 768px) {
+header {
+    .box {
+        width: 90%;
+        margin: 10rem 1rem;
+        font-size: 40px;
+    }
+}
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    .logo {
+        z-index: 1;
+    }
+    .menu {
+        display: flex;
+    }
+    .navbar-links {
+        width: 100%;
+        text-transform: uppercase;
+        height: 100vh;
+        padding-top: 5rem;
+        display: none;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+         
+    ul {
+        flex-direction: column;
+       
+    }
+    }
+    .navbar-links.active {
+        display: flex;   
+    }
+    }
+}
+section {
+.content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
